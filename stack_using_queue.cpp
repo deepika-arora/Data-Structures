@@ -2,6 +2,7 @@
 #include<conio.h>
 #define max_size 10
 using namespace std;
+
 class queue
 {
 	int *a;
@@ -107,14 +108,6 @@ int main()
 {
 	int x,ele,ch;
 	char c;
-//	queue q;
-	///*
-//	q.enque(1);
-//	q.enque(2);
-//	q.enque(3);
-//	cout<<q.deque();
-//	cout<<q.deque();
-//	cout<<q.deque();
     stack s;
 	do{
 	cout<<"\n\tSTACK OPERATIONS USING QUEUE";
@@ -138,6 +131,7 @@ int main()
 	}
 	cout<<"\n\twant to continue(enter y or Y)";
 	cin>>c;
+		
 }while(c=='y'||c=='Y');
 
 getch();
