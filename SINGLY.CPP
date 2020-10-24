@@ -343,8 +343,6 @@ void linklist::isinlist(int x)
 		cout<<"\n\n\tnot FOUND";
 	else
 	cout<<"\n\n\tFOUND";
-	//if(temp->info==x)
-
 
 }
 void linklist::rev()
@@ -405,6 +403,7 @@ void main()
 		cout<<"\n\n\t13.EXIT";
 		cout<<"\n\n\tENTER YOUR CHOICE";
 		cin>>choice;
+		
 		switch(choice)
 		{
 			case 1:cout<<"\n\n\tENTER THE ELEMENT : ";
@@ -413,30 +412,37 @@ void main()
 			       l1.addtohead(el);
 			       l1.display();
 			       break;
+				
 			case 2:cout<<"\n\n\tENTER THE ELEMENT : ";
 			       cin>>el;
 			       l1.addtotail(el);
 			       l1.display();
 			       break;
+				
 			case 3:cout<<"\t"<<l1.deletefromhead();
 			       l1.display();
 			       break;
+				
 			case 4:cout<<"\t"<<l1.deletefromtail();
 			       l1.display();
 			       break;
+				
 			case 5:cout<<"\n\n\tENTER THE ELEMENT TO BE SEARCHED : ";
 			       cin>>el;
 			       l1.isinlist(el);
 			       l1.display();
 			       break;
+				
 			case 6:cout<<"\n\n\tENTER THE ELEMENT TO BE DELETED";
 			       cin>>el;
 			       l1.deletenode(el);
 			       l1.display();
 			       break;
+				
 			case 7:l1.rev();
 			       l1.display();
 			       break;
+				
 			case 8:l1.deleteeven();
 			       cout<<"\n\n\tAFTER DELETING NEW LIST IS : \n\n\t";
 			       l1.display();
@@ -497,5 +503,3 @@ void main()
 	}while(ch=='Y'||ch=='y');
 	getch();
 }
-
-
