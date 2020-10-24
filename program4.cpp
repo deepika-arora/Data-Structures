@@ -98,6 +98,7 @@ void circular::split()
 				fast_ptr-it moves one step fast as compared to slow_ptr
 				slow_ptr-it moves one step slow as compared to fast_ptr
 	*/	
+	
 	if(head)
 	{
 	circular c1,c2;
