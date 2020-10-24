@@ -2,6 +2,7 @@
 #include<stack>
 #include<conio.h>
 using namespace std;
+
 void check(stack <int>s)
 {
 	/*
@@ -10,14 +11,14 @@ void check(stack <int>s)
 		s-integer object of stack
 	return value:none
 	approach:-if size of stack is odd
-				pop an element from stack
-				while stack is not empty
-					pop two elements from stach 
-						check whether they are consecutive or not
-							if elements of atleast one pair is not consecutive
-								print FALSE
-							otherwise
-								print TRUE
+	pop an element from stack
+	while stack is not empty
+		pop two elements from stach 
+			check whether they are consecutive or not
+				if elements of atleast one pair is not consecutive
+					print FALSE
+				otherwise
+					print TRUE
 	*/	
 	
 	int a,b,temp=1;
@@ -50,6 +51,7 @@ void check(stack <int>s)
 		cout<<"\tFALSE";
 	}
 }
+
 int main()
 {
 	/*
